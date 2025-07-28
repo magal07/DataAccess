@@ -23,6 +23,7 @@ namespace BaltaDataAccess
                     while (reader.Read())
                     {                           // Get + Type                     // Column Number (0 is Guid, 0 is Title)
                         Console.WriteLine($"{reader.GetGuid(0)} -  {reader.GetString(1)}");
+                        // old model of creation db connection
                     }
                 }
             }
