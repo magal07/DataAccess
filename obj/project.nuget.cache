@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "r2mNtDtwC90=",
+  "dgSpecHash": "w4S75hB4WHM=",
   "success": true,
   "projectFilePath": "C:\\dev\\BaltaDataAccess\\BaltaDataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marcelo\\.nuget\\packages\\azure.core\\1.44.1\\azure.core.1.44.1.nupkg.sha512",
     "C:\\Users\\Marcelo\\.nuget\\packages\\azure.identity\\1.13.2\\azure.identity.1.13.2.nupkg.sha512",
+    "C:\\Users\\Marcelo\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512",
     "C:\\Users\\Marcelo\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\Marcelo\\.nuget\\packages\\microsoft.bcl.cryptography\\9.0.4\\microsoft.bcl.cryptography.9.0.4.nupkg.sha512",
     "C:\\Users\\Marcelo\\.nuget\\packages\\microsoft.data.sqlclient\\6.1.0\\microsoft.data.sqlclient.6.1.0.nupkg.sha512",
