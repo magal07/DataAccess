@@ -20,7 +20,8 @@ namespace BaltaDataAccess
                 // DeleteCategory(connection);
                 // ListCategories(connection);
                 // GetCategory(connection);
-                ExecuteProcedure(connection);
+                // ExecuteProcedure(connection);
+                ExecuteReadProcedure(connection);
             }
         }
 
@@ -168,6 +169,19 @@ namespace BaltaDataAccess
             var affectedrows = connection.Execute(procedure, pars, commandType: CommandType.StoredProcedure);
 
             Console.WriteLine($"Affected Rows: {affectedrows}");
+        }
+        static void ExecuteReadProcedure(SqlConnection connection)
+        {               // No need to pass "EXEC" on behalf of "CommandType"
+            var procedure = "[spGetCoursesByCategory]";
+            var pars = new { CategoryId = "09ce0b7b-cfca-497b-92c0-3290ad9d5142" };
+            var courses = connection.Query(
+                procedure,
+                pars,
+                commandType: CommandType.StoredProcedure);
+                foreach(var item in courses)
+                {
+                    Console.WriteLine($"Id db: {item.Id} - Title: {item.Title}");
+                }
         }
     }
 }
